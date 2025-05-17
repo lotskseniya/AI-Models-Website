@@ -1,8 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
-import Footer from "./components/Footer";
-
 
 export const metadata = {
   title: "Arrakis AI Ecosystem",

@@ -4,6 +4,7 @@ import { useLeaderboardContext } from "../context/LeaderboardContext";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import "../globals.css";
 import project1 from "../../public/images/projects-1.png";
 import project2 from "../../public/images/projects-2.png";
@@ -28,7 +29,6 @@ const ParallaxProjects = () => {
       <div
         ref={(ref) => (imageRef.current[i - 1] = ref)}
         key={i}
-        style={{}}
         id={`image-${i}`}
         className="scrollSectionTest"
       >
@@ -43,7 +43,9 @@ const ParallaxProjects = () => {
     );
   }
 
+
   gsap.registerPlugin(ScrollTrigger);
+
 
   useGSAP(() => {
     const pin = gsap.fromTo(
@@ -52,14 +54,14 @@ const ParallaxProjects = () => {
         translateX: "0vw",
       },
       {
-        translateX: "-300vw",
+        translateX: "-400vw",
         ease: "none",
         duration: 1.5,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "50% 20%",
           end: "+=400",
-          scrub: 1,
+          scrub: 2,
           pin: true,
           invalidateOnRefresh: true,
           smooth: 1,
@@ -68,6 +70,7 @@ const ParallaxProjects = () => {
     );
     return () => {
       pin.kill();
+
     };
   });
 
@@ -76,9 +79,10 @@ const ParallaxProjects = () => {
       className="projectsSliderContainer"
     >
       <div ref={triggerRef}
+
       >
         <section className="projectsTitleSection"
-        style={ isPageTwoVisible ? { top: "15dvw" } : { top: "-5dvw" } }
+         style={ isPageTwoVisible ? { top: "25rem" } : { top: "-5dvw" } }
         >
           <p
             className="projectsTitleTest"
@@ -91,7 +95,8 @@ const ParallaxProjects = () => {
         </section>
 
         <section className="projectsSection" ref={imageContainerRef}
-        style={ isPageTwoVisible ? { marginTop: "20dvw" } : { marginTop: "8dvw" } }
+        style={ isPageTwoVisible ? { marginTop: "25rem" } : { marginTop: "8dvw" } }
+      
         >
           {imageSection}
         </section>

@@ -69,7 +69,7 @@ const Hero = () => {
           styles={{
             width: "8dvw",
             height: "3dvw",
-            padding: "1dvh",
+            padding: "1dvw",
             fontSize: `${buttonCallFontSize2}rem`,
             fontWeight: "400",
             textDecoration: "none",

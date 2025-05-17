@@ -70,7 +70,7 @@ const About = () => {
               objectFit: "contain",
               objectPosition: "center",
               zIndex: "1",
-              marginTop: "-8dvh",
+              marginTop: "-5dvh",
               marginLeft: "5dvw",
             }}
             ref={imageAboutRef}
@@ -84,7 +84,7 @@ const About = () => {
             justifyContent: "center",
             color: "rgba(255, 255, 255, 1)",
             alignItems: "start",
-            padding: "6.5dvw 5rem 0 5rem",
+            padding: "3rem 5rem 0 5rem",
             width: "48.25vw",
           }}
           className="aboutTextContainer"

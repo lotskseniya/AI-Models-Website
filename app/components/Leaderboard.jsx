@@ -24,6 +24,9 @@ const Leaderboard = () => {
   const buttonSubmitFontSize = useWindowDimensions({ proportion: 1485 });
   const buttonViewMoreFontSize = useWindowDimensions({ proportion: 1685 });
   const descriptionFontSize = useWindowDimensions({ proportion: 1590 });
+  const tableFontSize = useWindowDimensions({ proportion: 1960 });
+  const imageWidth = useWindowDimensions({ proportion: 8.4 });
+  const imageHeight = useWindowDimensions({ proportion: 2.55 });
   const rankIcons = [
     neutralRank,
     riseRank,
@@ -61,7 +64,6 @@ const Leaderboard = () => {
   return (
     <div
       className={styles.leaderboardContainer}
-      style={isPageTwoVisible ? { height: "240dvh" } : { height: "140dvh" }}
     >
       <div className={styles.leaderboardTitleContainer}>
         <h3 style={{ fontWeight: 500, fontSize: `${titleTextFontSize}rem` }}>
@@ -94,19 +96,22 @@ const Leaderboard = () => {
       </p>
 
       <table className={styles.leaderboardTable}>
-        <thead className={styles.leaderboardTableHeader}>
+        <thead className={styles.leaderboardTableHeader}
+          style={{ fontSize: `${tableFontSize}rem` }}>
           <tr>
             <th className={styles.leaderboardRankIcon}></th>
             <th className={styles.leaderboardRank}>#</th>
             <th className={styles.leaderboardTableModelName}>Model Name</th>
-            <th className={styles.leaderboardData}>Average</th>
-            <th className={styles.leaderboardData}>ARC</th>
-            <th className={styles.leaderboardData}>HellaSwag</th>
-            <th className={styles.leaderboardData}>MMLU</th>
-            <th className={styles.leaderboardData}>TruthfulQA</th>
-            <th className={styles.leaderboardData}>Winogrande</th>
-            <th className={styles.leaderboardData}>GSM8K</th>
-            <th className={styles.leaderboardData}>Earnings</th>
+            <th className={styles.leaderboardTableHeader}>Average</th>
+            <th className={styles.leaderboardTableHeader}>ARC</th>
+            <th className={styles.leaderboardTableHeader}>HellaSwag</th>
+            <th className={styles.leaderboardTableHeader}>MMLU</th>
+            <th className={styles.leaderboardTableHeader}>TruthfulQA</th>
+            <th className={styles.leaderboardTableHeader}>Winogrande</th>
+            <th className={styles.leaderboardTableHeader}>GSM8K</th>
+            <th className={styles.leaderboardTableHeader}
+               style={{ paddingRight: "1.5rem" }}
+            >Earnings</th>
           </tr>
         </thead>
         <tbody>
@@ -114,6 +119,7 @@ const Leaderboard = () => {
             <tr
               key={index + leaderboardData.length}
               className={styles.leaderboardTableRow}
+              style={{ fontSize: `${tableFontSize}rem` }}
             >
               <td className={styles.leaderboardRankIcon}>
                 <Image
@@ -121,7 +127,6 @@ const Leaderboard = () => {
                   alt="Rank Icon"
                   width={20}
                   height={20}
-                  style={{ padding: "1.5rem" }}
                 />
               </td>
               <td className={styles.leaderboardRank}>
@@ -152,6 +157,7 @@ const Leaderboard = () => {
                 <tr
                   key={index + leaderboardData.length}
                   className={styles.leaderboardTableRow}
+                  style={{ fontSize: `${tableFontSize}rem` }}
                 >
                   <td className={styles.leaderboardRankIcon}>
                     <Image
@@ -159,7 +165,6 @@ const Leaderboard = () => {
                       alt="Rank Icon"
                       width={20}
                       height={20}
-                      style={{ padding: "1.5rem" }}
                     />
                   </td>
                   <td className={styles.leaderboardRank}>
@@ -192,7 +197,7 @@ const Leaderboard = () => {
         style={{
           fontSize: `${buttonViewMoreFontSize}rem`,
           cursor: "pointer",
-          marginInlineStart: isPageTwoVisible ? "90%" : "0rem",
+          marginInlineStart: isPageTwoVisible ? "90%" : "3rem",
         }}
         className={styles.viewMoreButton}
         onClick={() => {
@@ -203,8 +208,8 @@ const Leaderboard = () => {
           <Image
             src={buttonUp}
             alt="Button Up"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             style={{ padding: "1.5rem" }}
           />
         ) : "View More"}
@@ -215,12 +220,12 @@ const Leaderboard = () => {
           <Image
             src={rocketLeaderboardImage}
             alt="Rocket Leaderboard"
-            width={200}
-            height={600}
+            width={imageWidth}
+            height={imageHeight}
             style={{ 
               position: "absolute",
-              left: "19dvw",
-              top: "79dvw",
+              left: "21dvw",
+              top: "90dvh",
               zIndex: 4,
             }}
             ref={rocketImageRef}
