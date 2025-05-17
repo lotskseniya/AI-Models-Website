@@ -24,9 +24,12 @@ const Leaderboard = () => {
   const buttonSubmitFontSize = useWindowDimensions({ proportion: 1485 });
   const buttonViewMoreFontSize = useWindowDimensions({ proportion: 1685 });
   const descriptionFontSize = useWindowDimensions({ proportion: 1590 });
+<<<<<<< HEAD
   const tableFontSize = useWindowDimensions({ proportion: 1960 });
   const imageWidth = useWindowDimensions({ proportion: 8.4 });
   const imageHeight = useWindowDimensions({ proportion: 2.55 });
+=======
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
   const rankIcons = [
     neutralRank,
     riseRank,
@@ -64,6 +67,10 @@ const Leaderboard = () => {
   return (
     <div
       className={styles.leaderboardContainer}
+<<<<<<< HEAD
+=======
+      style={isPageTwoVisible ? { height: "240dvh" } : { height: "140dvh" }}
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
     >
       <div className={styles.leaderboardTitleContainer}>
         <h3 style={{ fontWeight: 500, fontSize: `${titleTextFontSize}rem` }}>
@@ -96,12 +103,17 @@ const Leaderboard = () => {
       </p>
 
       <table className={styles.leaderboardTable}>
+<<<<<<< HEAD
         <thead className={styles.leaderboardTableHeader}
           style={{ fontSize: `${tableFontSize}rem` }}>
+=======
+        <thead className={styles.leaderboardTableHeader}>
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
           <tr>
             <th className={styles.leaderboardRankIcon}></th>
             <th className={styles.leaderboardRank}>#</th>
             <th className={styles.leaderboardTableModelName}>Model Name</th>
+<<<<<<< HEAD
             <th className={styles.leaderboardTableHeader}>Average</th>
             <th className={styles.leaderboardTableHeader}>ARC</th>
             <th className={styles.leaderboardTableHeader}>HellaSwag</th>
@@ -112,6 +124,16 @@ const Leaderboard = () => {
             <th className={styles.leaderboardTableHeader}
                style={{ paddingRight: "1.5rem" }}
             >Earnings</th>
+=======
+            <th className={styles.leaderboardData}>Average</th>
+            <th className={styles.leaderboardData}>ARC</th>
+            <th className={styles.leaderboardData}>HellaSwag</th>
+            <th className={styles.leaderboardData}>MMLU</th>
+            <th className={styles.leaderboardData}>TruthfulQA</th>
+            <th className={styles.leaderboardData}>Winogrande</th>
+            <th className={styles.leaderboardData}>GSM8K</th>
+            <th className={styles.leaderboardData}>Earnings</th>
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
           </tr>
         </thead>
         <tbody>
@@ -119,7 +141,10 @@ const Leaderboard = () => {
             <tr
               key={index + leaderboardData.length}
               className={styles.leaderboardTableRow}
+<<<<<<< HEAD
               style={{ fontSize: `${tableFontSize}rem` }}
+=======
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
             >
               <td className={styles.leaderboardRankIcon}>
                 <Image
@@ -127,6 +152,10 @@ const Leaderboard = () => {
                   alt="Rank Icon"
                   width={20}
                   height={20}
+<<<<<<< HEAD
+=======
+                  style={{ padding: "1.5rem" }}
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
                 />
               </td>
               <td className={styles.leaderboardRank}>
@@ -157,7 +186,10 @@ const Leaderboard = () => {
                 <tr
                   key={index + leaderboardData.length}
                   className={styles.leaderboardTableRow}
+<<<<<<< HEAD
                   style={{ fontSize: `${tableFontSize}rem` }}
+=======
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
                 >
                   <td className={styles.leaderboardRankIcon}>
                     <Image
@@ -165,6 +197,10 @@ const Leaderboard = () => {
                       alt="Rank Icon"
                       width={20}
                       height={20}
+<<<<<<< HEAD
+=======
+                      style={{ padding: "1.5rem" }}
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
                     />
                   </td>
                   <td className={styles.leaderboardRank}>
@@ -197,7 +233,11 @@ const Leaderboard = () => {
         style={{
           fontSize: `${buttonViewMoreFontSize}rem`,
           cursor: "pointer",
+<<<<<<< HEAD
           marginInlineStart: isPageTwoVisible ? "90%" : "3rem",
+=======
+          marginInlineStart: isPageTwoVisible ? "90%" : "0rem",
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
         }}
         className={styles.viewMoreButton}
         onClick={() => {
@@ -208,8 +248,13 @@ const Leaderboard = () => {
           <Image
             src={buttonUp}
             alt="Button Up"
+<<<<<<< HEAD
             width={35}
             height={35}
+=======
+            width={40}
+            height={40}
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
             style={{ padding: "1.5rem" }}
           />
         ) : "View More"}
@@ -220,12 +265,21 @@ const Leaderboard = () => {
           <Image
             src={rocketLeaderboardImage}
             alt="Rocket Leaderboard"
+<<<<<<< HEAD
             width={imageWidth}
             height={imageHeight}
             style={{ 
               position: "absolute",
               left: "21dvw",
               top: "90dvh",
+=======
+            width={200}
+            height={600}
+            style={{ 
+              position: "absolute",
+              left: "19dvw",
+              top: "79dvw",
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
               zIndex: 4,
             }}
             ref={rocketImageRef}

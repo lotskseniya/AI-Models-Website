@@ -4,7 +4,10 @@ import { useLeaderboardContext } from "../context/LeaderboardContext";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+<<<<<<< HEAD
 import { ScrollSmoother } from "gsap/ScrollSmoother";
+=======
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
 import "../globals.css";
 import project1 from "../../public/images/projects-1.png";
 import project2 from "../../public/images/projects-2.png";
@@ -29,6 +32,10 @@ const ParallaxProjects = () => {
       <div
         ref={(ref) => (imageRef.current[i - 1] = ref)}
         key={i}
+<<<<<<< HEAD
+=======
+        style={{}}
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
         id={`image-${i}`}
         className="scrollSectionTest"
       >
@@ -43,10 +50,15 @@ const ParallaxProjects = () => {
     );
   }
 
+<<<<<<< HEAD
 
   gsap.registerPlugin(ScrollTrigger);
 
 
+=======
+  gsap.registerPlugin(ScrollTrigger);
+
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
   useGSAP(() => {
     const pin = gsap.fromTo(
       imageContainerRef.current,
@@ -54,14 +66,22 @@ const ParallaxProjects = () => {
         translateX: "0vw",
       },
       {
+<<<<<<< HEAD
         translateX: "-400vw",
+=======
+        translateX: "-300vw",
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
         ease: "none",
         duration: 1.5,
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "50% 20%",
           end: "+=400",
+<<<<<<< HEAD
           scrub: 2,
+=======
+          scrub: 1,
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
           pin: true,
           invalidateOnRefresh: true,
           smooth: 1,
@@ -70,7 +90,10 @@ const ParallaxProjects = () => {
     );
     return () => {
       pin.kill();
+<<<<<<< HEAD
 
+=======
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
     };
   });
 
@@ -79,10 +102,16 @@ const ParallaxProjects = () => {
       className="projectsSliderContainer"
     >
       <div ref={triggerRef}
+<<<<<<< HEAD
 
       >
         <section className="projectsTitleSection"
          style={ isPageTwoVisible ? { top: "25rem" } : { top: "-5dvw" } }
+=======
+      >
+        <section className="projectsTitleSection"
+        style={ isPageTwoVisible ? { top: "15dvw" } : { top: "-5dvw" } }
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
         >
           <p
             className="projectsTitleTest"
@@ -95,8 +124,12 @@ const ParallaxProjects = () => {
         </section>
 
         <section className="projectsSection" ref={imageContainerRef}
+<<<<<<< HEAD
         style={ isPageTwoVisible ? { marginTop: "25rem" } : { marginTop: "8dvw" } }
       
+=======
+        style={ isPageTwoVisible ? { marginTop: "20dvw" } : { marginTop: "8dvw" } }
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
         >
           {imageSection}
         </section>

@@ -69,7 +69,11 @@ const Hero = () => {
           styles={{
             width: "8dvw",
             height: "3dvw",
+<<<<<<< HEAD
             padding: "1dvw",
+=======
+            padding: "1dvh",
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
             fontSize: `${buttonCallFontSize2}rem`,
             fontWeight: "400",
             textDecoration: "none",

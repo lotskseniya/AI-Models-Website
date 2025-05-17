@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -36,3 +37,33 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # AI-Models-Website
 # AI-Models-Website
+=======
+# 📦 Parallax Scroll Demo – Next.js + Vanilla CSS
+
+A responsive web demo built with **Next.js** and **vanilla CSS**, showcasing **parallax scrolling effects** in both vertical and horizontal directions. 
+Designed to perform seamlessly across all devices and screen sizes.
+
+---
+
+
+## 🛠️ Tech Stack:
+
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Styling:**  **Vanilla CSS** (no libraries/frameworks used)
+- **Effects:** Native JS + GSAP — used for smooth and performant parallax effects, enabling fine-grained control over scroll-triggered animations and transitions across both vertical and horizontal directions.
+- **Responsive:** Mobile-first approach, fully responsive across all major devices
+
+---
+
+## 📱 Features
+- 🌀 **Vertical & horizontal parallax** scrolling
+- ⚡ Optimized performance using native scroll events and CSS transforms
+- ✨ Clean structure and reusable components
+
+---
+
+
+## 🚀 Live Demo
+
+.... To be deployed to Vercel
+>>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
