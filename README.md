@@ -1,6 +1,10 @@
 
 # AI-Models-Website
-# AI-Models-Website
+
+## 🚀 Live Demo
+
+https://demo-task-website.vercel.app/
+
 =======
 # 📦 Parallax Scroll Demo – Next.js + Vanilla CSS
 
@@ -27,7 +31,4 @@ Designed to perform seamlessly across all devices and screen sizes.
 ---
 
 
-## 🚀 Live Demo
-
-.... To be deployed to Vercel
 
