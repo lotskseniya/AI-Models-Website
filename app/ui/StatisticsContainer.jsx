@@ -13,16 +13,10 @@ const StatisticsContainer = () => {
         {data.map((item, index) => (
           <div key={index} className={styles.statisticsItem}
             style={{
-<<<<<<< HEAD
               width: "29dvw",
                height: "10dvw",
                gap: "1dvh",
                padding: "0.5dvw 0",
-=======
-              width: "29.5dvw",
-               height: "10dvw",
-               gap: "1dvh",
->>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
             }}
           >
             <h4

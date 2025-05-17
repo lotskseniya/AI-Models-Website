@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import styles from "../page.module.css";
+import "../globals.css";
 import CallToActionButton from "../ui/Button";
 import StatisticsContainer from "../ui/StatisticsContainer";
 import Link from "next/link";
@@ -53,14 +54,14 @@ const Hero = () => {
 
       <div className={styles.heroLinks}>
         <Link
-          href="/leaderboard"
+          href="#leaderboard"
           style={{
             textDecoration: "none",
             fontWeight: "400",
             fontSize: `${buttonCallFontSize2}rem`,
             height: "3rem",
           }}
-          className={`${inter.className}`}
+          className={`${inter.className} pageLinks`}
         >
           LLM Leaderboard
         </Link>
@@ -69,11 +70,7 @@ const Hero = () => {
           styles={{
             width: "8dvw",
             height: "3dvw",
-<<<<<<< HEAD
             padding: "1dvw",
-=======
-            padding: "1dvh",
->>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
             fontSize: `${buttonCallFontSize2}rem`,
             fontWeight: "400",
             textDecoration: "none",

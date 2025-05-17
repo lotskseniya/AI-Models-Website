@@ -41,10 +41,10 @@ const Footer = () => {
           <Link href="/" className={styles.footerNavBarLink}>
             Home
           </Link>
-          <Link href="/leaderboard" className={styles.footerNavBarLink}>
+          <Link href="#leaderboard" className={styles.footerNavBarLink}>
             Leaderboard
           </Link>
-          <Link href="/services" className={styles.footerNavBarLink}>
+          <Link href="#about" className={styles.footerNavBarLink}>
             About
           </Link>
         </div>

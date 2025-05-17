@@ -57,6 +57,7 @@ const About = () => {
         overflow: "hidden",
       }}
       className={styles.about}
+      id="about"
     >
       <div ref={triggerAboutRef}>
         <section
@@ -70,11 +71,7 @@ const About = () => {
               objectFit: "contain",
               objectPosition: "center",
               zIndex: "1",
-<<<<<<< HEAD
               marginTop: "-5dvh",
-=======
-              marginTop: "-8dvh",
->>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
               marginLeft: "5dvw",
             }}
             ref={imageAboutRef}
@@ -88,11 +85,7 @@ const About = () => {
             justifyContent: "center",
             color: "rgba(255, 255, 255, 1)",
             alignItems: "start",
-<<<<<<< HEAD
             padding: "3rem 5rem 0 5rem",
-=======
-            padding: "6.5dvw 5rem 0 5rem",
->>>>>>> a15dfb163178e1bb47e1274b294a3afbeb368e80
             width: "48.25vw",
           }}
           className="aboutTextContainer"

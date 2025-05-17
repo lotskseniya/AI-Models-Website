@@ -76,6 +76,12 @@
   flex-shrink: 0;
 }
 
+.link, .pageLinks {
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
 
 @media (max-width: 1200px) {
  .projectsSliderContainer {
