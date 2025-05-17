@@ -118,7 +118,7 @@ const About = () => {
           <CallToActionButton
             styles={{
               width: "16dvw",
-              height: "3.6dvw",
+              height: "4dvw",
               padding: "1dvh",
               fontSize: `${buttonCallFontSize}rem`,
               fontWeight: "500",
