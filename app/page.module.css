@@ -44,6 +44,8 @@
 }
 
 .statisticsItem {
+  width: 28dvw;
+  height: 9dvw;
   color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
@@ -139,7 +141,7 @@
 }
 
 .heroTextContainer {
-  margin-top: 4.5dvh;
+  margin-top: 4.5dvw;
   margin-left: 4dvw;
   display: flex;
   flex-direction: column;
@@ -171,7 +173,7 @@
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   line-height: 100%;
-  margin-top: 3dvh;
+  margin-top: 3dvw;
 }
 
 /* Leaderboard Section styles:  */
@@ -193,8 +195,6 @@
   height: fit-content;
   width: 90dvw;
   margin-bottom: 0%;
-
-                
 }
 
 .leaderboardDescription {
@@ -280,6 +280,7 @@
   flex-direction: column;
   width: 100%;
   height: 100dvh;
+  margin-top: 5dvw;
 }
 
 .aboutSectionText {
@@ -342,7 +343,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 35dvh;
+  height: 40dvh;
   overflow: hidden;
   position: relative;
 }
@@ -350,18 +351,20 @@
 .footerNavBar {
   display: flex;
   flex-direction: column;
-  
+  align-self: center;
 }
 
 .navlinks {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 30rem;
+  justify-content: center;
+  /* width: 22dvw; */
+  gap: 4dvw;
   color: rgba(255, 255, 255, 1);
   font-weight: 600;
   z-index: 2;
-  align-self: center;
+  /* align-self: center; */
+  height: 5dvh;
 }
 
 .navlinks a {
@@ -371,16 +374,19 @@
 
 .footerNavBarBottom {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 
   width: 90dvw;
-  padding: 0 10dvw;
+  height: 5dvh;
+  padding: 1dvh 10dvw;
+
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navBottomlinks {
   z-index: 2;
-  
 }
 
 .footerNavBarBottomLink {
@@ -407,7 +413,7 @@
 
   .about {
     height: 100dvh;
-    margin-top: -10dvh;
+    margin-top: -2dvw;
   }
 
   .contactContainer {
@@ -420,13 +426,23 @@
     height: 80dvh;
   }
 
+  .hero {
+    width: 95%;
+    left: 2dvw;
+  }
+
+  .heroTextContainer {
+    margin-top: 1dvw;
+    width: 84dvw;
+  }
+
   .statisticsSection {
-    margin-top: 10dvw;
+    margin-top: 10rem;
   }
 
   .about {
-    height: 75dvh;
-    margin-top: -8dvh;
+    height: 85dvh;
+    margin-top: 1rem;
   }
 
   .contactContainer {
@@ -437,7 +453,7 @@
     height: 6dvh;
   }
 
-    .leaderboardTable tr {
+  .leaderboardTable tr {
     height: 5dvh;
   }
 
@@ -455,6 +471,10 @@
   .leaderboardTable thead tr {
     font-size: 1dvw;
   }
+
+  .footer {
+    height: 25dvh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -467,7 +487,7 @@
   }
 
   .heroTextContainer {
-    margin-top: -5dvw;
+    margin-top: -6dvh;
   }
 
   .about {
@@ -497,35 +517,54 @@
   .leaderboardTable thead tr {
     font-size: 1.3dvw;
   }
+
+  .footer {
+    height: 30dvh;
+  }
 }
 
 @media (max-width: 480px) {
   .mainSection {
-    height: 75dvh;
+    height: 50dvh;
   }
 
-  .statisticsSection {
-    margin-top: 5dvw;
+  .hero {
+    width: 90%;
+    left: 5dvw;
   }
 
   .heroTextContainer {
-    margin-top: -5dvw;
+    margin-top: -19dvw;
+    width: 84dvw;
+  }
+
+  .heroLinks {
+    margin: 0.1dvh auto;
+  }
+
+  .statisticsSection {
+    margin-top: -6dvw;
+    padding: 0 0.2rem;
+  }
+
+  .statisticsItem {
+    width: 26dvw;
   }
 
   .about {
-    height: 60dvh;
-    margin-top: -15dvh;
+    height: 68dvw;
+    margin-top: -17dvh;
   }
 
   .contactContainer {
-    height: 60dvh;
+    height: 35dvh;
   }
 
   .leaderboardTable tr {
     height: 4.8dvh;
   }
 
-   .leaderboardTable tr {
+  .leaderboardTable tr {
     height: 5dvh;
   }
 
@@ -542,5 +581,277 @@
 
   .leaderboardTable thead tr {
     font-size: 1dvw;
+  }
+
+  .footer {
+    padding-top: 2dvw;
+    height: 25dvh;
+  }
+}
+
+/* Galaxy Z Fold 5: */
+@media (max-width: 344px) {
+  .hero {
+    left: 5dvw;
+  }
+
+  .heroTextContainer {
+    margin-top: -25dvw;
+    width: 90dvw;
+  }
+
+  .heroHeader {
+    font-size: 6.5dvw !important;
+  }
+
+  .statisticsSection {
+    margin-top: -10dvw;
+  }
+
+  .about {
+    height: 79dvw;
+    margin-top: -17dvh;
+  }
+
+  .contactContainer {
+    height: 40dvh;
+  }
+
+  .footer {
+    padding-top: 10dvw;
+    height: 22dvh;
+  }
+
+  .footerNavBarBottom {
+    width: 94dvw;
+  }
+  
+}
+
+/* Galaxy Z Flip 6: */
+@media (width: 1080px) and (height: 2640px)
+{
+  .mainSection {
+    height: 48dvh;
+  }
+
+  .hero {
+    height: 80dvh;
+    left: 5dvw;
+  }
+
+  .heroTextContainer {
+    margin-top: -25dvw;
+    width: 90dvw;
+  }
+
+  .heroHeader {
+    font-size: 6.5dvw !important;
+  }
+
+  .statisticsSection {
+    margin-top: -10dvw;
+  }
+
+  .about {
+    height: 70dvw;
+    margin-top: -17dvh;
+  }
+
+  .leaderboardContainer {
+   width: 90dvw;
+  }
+
+  .leaderboardTable thead {
+    font-size: 1.2rem !important;
+  }
+
+  .leaderboardTable tbody tr{
+    font-size: 1.2rem !important;
+  }
+
+
+  .contactContainer {
+    height: 40dvh;
+  }
+
+  .footer {
+    padding-top: 10dvw;
+    height: 20dvh;
+  }
+
+  .footerNavBarLink {
+    font-size: 2rem !important;
+  }
+
+  .footerNavBarBottomLink {
+    font-size: 1.5rem !important;
+  }
+
+  .footerNavBarBottom {
+    width: 88dvw;
+  }
+}
+
+/* Iphone 16 Pro: */
+@media (width: 1206px) and (height: 2622px)
+{
+  .mainSection {
+    height: 48dvh;
+  }
+
+  .hero {
+    height: 80dvh;
+    left: 5dvw;
+  }
+
+  .heroTextContainer {
+    margin-top: -15dvw;
+    width: 90dvw;
+  }
+
+  .heroHeader {
+    font-size: 6.5dvw !important;
+  }
+
+  .statisticsSection {
+    margin-top: -10dvw;
+  }
+
+  .about {
+    height: 70dvw;
+    margin-top: -17dvh;
+  }
+
+  .leaderboardContainer {
+   width: 90dvw;
+  }
+
+    .leaderboardTable tr {
+  height: 5.2dvh;
+}
+.leaderboardTable thead {
+    font-size: 1rem !important;
+  }
+
+  .leaderboardTable tbody tr{
+    font-size: 1rem !important;
+  }
+
+  .contactContainer {
+    height: 40dvh;
+  }
+
+  .footer {
+    padding-top: 10dvw;
+    height: 20dvh;
+  }
+
+  .footerNavBarLink {
+    font-size: 2rem !important;
+  }
+
+  .footerNavBarBottomLink {
+    font-size: 1.5rem !important;
+  }
+
+  .footerNavBarBottom {
+    width: 88dvw;
+  }
+}
+
+
+/* Iphone 16 Pro Max: */
+@media (width: 1320px) and (height: 2868px)
+{
+  .mainSection {
+    height: 48dvh;
+  }
+
+  .hero {
+    height: 80dvh;
+    left: 5dvw;
+  }
+
+  .heroTextContainer {
+    margin-top: -15dvw;
+    width: 90dvw;
+  }
+
+  .heroHeader {
+    font-size: 6.5dvw !important;
+  }
+
+  .statisticsSection {
+    margin-top: -10dvw;
+  }
+
+  .about {
+    height: 70dvw;
+    margin-top: -17dvh;
+  }
+
+  .leaderboardContainer {
+   width: 90dvw;
+  }
+
+    .leaderboardTable tr {
+  height: 5.2dvh;
+}
+.leaderboardTable thead {
+    font-size: 1rem !important;
+  }
+
+  .leaderboardTable tbody tr{
+    font-size: 1rem !important;
+  }
+
+  .contactContainer {
+    height: 40dvh;
+  }
+
+  .footer {
+    padding-top: 10dvw;
+    height: 15dvh;
+  }
+
+  .footerNavBarLink {
+    font-size: 2rem !important;
+  }
+
+  .footerNavBarBottomLink {
+    font-size: 1.5rem !important;
+  }
+
+  .footerNavBarBottom {
+    width: 88dvw;
+  }
+}
+
+
+/* Ipad Air: */
+@media ((width: 820px) and (height: 1180px)) {
+  .heroTextContainer {
+    margin-top: -5dvh;
+  }
+
+  .footer {
+    height: 28dvh;
+  }
+}
+
+/* Ipad Pro: */
+@media ((width: 1024px) and (height: 1366px)) {
+  .heroTextContainer {
+    margin-top: -5dvh;
+  }
+
+  .about {
+    margin-top: -25dvh;
+    height: 55dvh;
+  }
+
+  .footer {
+    height: 30dvh;
   }
 }

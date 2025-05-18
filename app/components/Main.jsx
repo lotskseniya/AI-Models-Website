@@ -14,8 +14,10 @@ const Main = () => {
       <div
         className={styles.heroTealGradient}
         style={{
-          marginTop: "12vh",
-          marginLeft: "29vw",
+          // marginTop: "12vh",
+          marginTop: "12dvw",
+          // marginLeft: "29vw",
+          marginLeft: "29dvw",
           height: "19vh",
           width: "19vw",
         }}
@@ -25,7 +27,7 @@ const Main = () => {
         src={heroImage}
         alt="hero-section-image"
         className="bgImage"
-        objectFit="cover"
+        priority
         style={{
           position: "absolute",
           top: "8dvh",
@@ -33,6 +35,7 @@ const Main = () => {
           width: "42%",
           height: "auto",
           zIndex: 0,
+          objectFit: "cover",
         }}
       />
       <Hero />

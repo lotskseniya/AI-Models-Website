@@ -6,7 +6,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-height: 20dvh;
+  height: 20dvh;
+   z-index: 2;
+  position: absolute;
+  left: calc(30% + 46dvw);
 }
 
 .projectsTitle {
@@ -29,6 +32,8 @@
   width: calc(100vw * 4);
   gap: 7dvw;
   min-height: 50dvh;
+  flex-direction: row;
+  padding: 5px 0;
 }
 
 .projectsSliderContainer {
@@ -40,32 +45,12 @@
   height: 100dvh;
 }
 
-.projectsTitleSection {
-  display: inline-flex;
-  height: 20dvh;
-  z-index: 2;
-  position: absolute;
-  left: calc(30% + 48dvw);
-}
+
 
 .projectsTitleTest {
   display: flex;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
-}
-
-.projectsSection {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: calc(100vw * 4);
-  gap: 7dvw;
-  height: 30dvh;
-
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
 }
 
 .scrollSectionTest {
@@ -87,6 +72,10 @@
  .projectsSliderContainer {
   height: 60dvh;
  }
+
+ .projectsTitleSection {
+  padding-top: 2rem;
+ }
 }
 
 @media (max-width: 768px) {
@@ -97,7 +86,56 @@
 
 @media (max-width: 480px) {
  .projectsSliderContainer {
-  height: 80dvh;
+  height: 55dvh;
+ }
+
+ .projectsTitleSection {
+  padding-top: 2rem;
  }
 }
 
+
+@media (max-width: 344px) {
+ .projectsSliderContainer {
+  height: 55dvh;
+ }
+
+ .projectsTitleSection {
+  padding-top: 2rem;
+ }
+}
+
+/* Galaxy Z Flip 6: */
+@media (width: 1080px) and (height: 2640px) {
+ .projectsSliderContainer {
+  height: 45dvh;
+ }
+
+ .projectsTitleSection {
+  padding-top: 12dvh;
+ }
+}
+
+/* Iphone 16 Pro: */
+@media (width: 1206px) and (height: 2622px)
+{
+ .projectsSliderContainer {
+  height: 50dvh;
+ }
+
+ .projectsTitleSection {
+  padding-top: 12dvh;
+ }
+}
+
+/* Iphone 16 Pro Max: */
+@media (width: 1320px) and (height: 2868px)
+{
+ .projectsSliderContainer {
+  height: 52dvh;
+ }
+
+ .projectsTitleSection {
+  padding-top: 12dvh;
+ }
+}

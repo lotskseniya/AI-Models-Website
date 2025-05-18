@@ -6,15 +6,13 @@ import useWindowDimensions from "../hooks/useWindowDimentions";
 
 const StatisticsContainer = () => {
   const titleFontSize = useWindowDimensions({ proportion: 1290 });
- const statisticsFontSize = useWindowDimensions({ proportion: 450 });
+ const statisticsFontSize = useWindowDimensions({ proportion: 460 });
 
   return (
     <div className={styles.statisticsSection}>
         {data.map((item, index) => (
           <div key={index} className={styles.statisticsItem}
             style={{
-              width: "29dvw",
-               height: "10dvw",
                gap: "1dvh",
                padding: "0.5dvw 0",
             }}

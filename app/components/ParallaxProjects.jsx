@@ -21,6 +21,8 @@ const ParallaxProjects = () => {
   const imageContainerRef = useRef();
   const triggerRef = useRef();
   let imageSection = [];
+  let windowWidth = window.innerWidth;
+  let windowHeight = window.innerHeight;
   
 
   for (let i = 1; i <= 5; i++) {
@@ -44,7 +46,6 @@ const ParallaxProjects = () => {
 
 
   gsap.registerPlugin(ScrollTrigger);
-
 
   useGSAP(() => {
     const pin = gsap.fromTo(
@@ -80,8 +81,14 @@ const ParallaxProjects = () => {
 
       >
         <section className="projectsTitleSection"
-         style={ isPageTwoVisible ? { top: "25rem" } : { top: "-5dvw" } }
-        >
+          style={
+            isPageTwoVisible
+              ? (windowWidth >= 1080 && windowHeight >= 2640
+                  ? { top: "55rem" }
+                  : { top: "25rem" })
+              : { top: "-5dvw" }
+          }
+        > 
           <p
             className="projectsTitleTest"
             style={{
@@ -93,7 +100,11 @@ const ParallaxProjects = () => {
         </section>
 
         <section className="projectsSection" ref={imageContainerRef}
-        style={ isPageTwoVisible ? { marginTop: "25rem" } : { marginTop: "8dvw" } }
+        style={ isPageTwoVisible 
+          ? (windowWidth >= 1080 && windowHeight >= 2640
+                  ? { top: "55rem" }
+                  : { top: "25rem" })
+        : { marginTop: "8dvw" } }
       
         >
           {imageSection}

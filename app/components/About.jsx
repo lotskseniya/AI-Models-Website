@@ -55,6 +55,7 @@ const About = () => {
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
+        padding: "2dvw"
       }}
       className={styles.about}
       id="about"
@@ -85,7 +86,7 @@ const About = () => {
             justifyContent: "center",
             color: "rgba(255, 255, 255, 1)",
             alignItems: "start",
-            padding: "3rem 5rem 0 5rem",
+            padding: "3dvw 5dvw 0 5dvw",
             width: "48.25vw",
           }}
           className="aboutTextContainer"
@@ -118,8 +119,8 @@ const About = () => {
           <CallToActionButton
             styles={{
               width: "16dvw",
-              height: "4dvw",
-              padding: "1dvh",
+              height: "3.6dvw",
+              padding: "1vw",
               fontSize: `${buttonCallFontSize}rem`,
               fontWeight: "500",
               textDecoration: "none",

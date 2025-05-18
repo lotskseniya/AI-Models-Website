@@ -12,6 +12,7 @@ const Footer = () => {
   const imageHeight = useWindowDimensions({ proportion: 6 });
   const navImageWidth = useWindowDimensions({ proportion: 30 });
   const navImageHeight = useWindowDimensions({ proportion: 30 });
+  const navBottomFontSize = useWindowDimensions({ proportion: 1600 });
 
   return (
     <div className={styles.footer}>
@@ -34,7 +35,7 @@ const Footer = () => {
       <div className={styles.footerNavBar}>
         <div
           style={{
-            fontSize: ".9rem",
+            fontSize: `${navBottomFontSize}rem`,
           }}
           className={styles.navlinks}
         >
@@ -63,10 +64,7 @@ const Footer = () => {
         <div className={styles.footerNavBarBottom}>
           <div
             style={{
-              width: "7.125rem",
-              position: "absolute",
-              bottom: "5rem",
-              left: "3rem",
+              width: "4em",
               zIndex: 1,
             }}
           >
@@ -80,7 +78,7 @@ const Footer = () => {
                 style={{
                   width: "20%",
                   height: "30%",
-                  marginRight: ".4rem",
+                  marginRight: ".5rem",
                 }}
               />
             ))}
@@ -89,9 +87,6 @@ const Footer = () => {
           <div
           style={{
              fontSize: ".75rem",
-            position: "absolute",
-            bottom: "5rem",
-            right: "3rem",
           }}
           className={styles.navBottomlinks}
         >

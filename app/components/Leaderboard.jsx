@@ -75,7 +75,7 @@ const Leaderboard = () => {
           styles={{
             width: "15dvw",
             height: "3.6dvw",
-            padding: "1dvh",
+            padding: "1dvw",
             fontSize: `${buttonSubmitFontSize}rem`,
             fontWeight: "500",
             textDecoration: "none",
@@ -198,7 +198,7 @@ const Leaderboard = () => {
         style={{
           fontSize: `${buttonViewMoreFontSize}rem`,
           cursor: "pointer",
-          marginInlineStart: isPageTwoVisible ? "90%" : "3rem",
+          marginInlineStart: isPageTwoVisible ? "90%" : "3dvw",
         }}
         className={styles.viewMoreButton}
         onClick={() => {
@@ -209,9 +209,9 @@ const Leaderboard = () => {
           <Image
             src={buttonUp}
             alt="Button Up"
-            width={35}
-            height={35}
-            style={{ padding: "1.5rem" }}
+            width={30}
+            height={30}
+            style={{ padding: "1.5rem", marginRight: "5dvw" }}
           />
         ) : "View More"}
       </button>

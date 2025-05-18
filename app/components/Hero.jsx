@@ -98,12 +98,12 @@ const Hero = () => {
           compete against OpenAI
         </p>
 
-        <div style={{ marginTop: "2.5dvh" }}>
+        <div style={{ marginTop: "2.5dvw" }}>
           <CallToActionButton
             styles={{
               width: "12dvw",
               height: "4.2dvw",
-              padding: "1dvh",
+              padding: "1dvw",
               fontSize: `${buttonCallFontSize1}rem`,
               fontWeight: "500",
               textDecoration: "none",
