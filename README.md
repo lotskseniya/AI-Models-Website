@@ -3,7 +3,7 @@
 
 ## 🚀 Live Demo
 
-https://demo-task-website.vercel.app/
+https://demo-website-task.vercel.app/
 
 =======
 # 📦 Parallax Scroll Demo – Next.js + Vanilla CSS
