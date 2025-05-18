@@ -121,6 +121,8 @@ const About = () => {
               width: "16dvw",
               height: "3.6dvw",
               padding: "1vw",
+             height: "3.6dvw",
+              padding: "1vw",
               fontSize: `${buttonCallFontSize}rem`,
               fontWeight: "500",
               textDecoration: "none",

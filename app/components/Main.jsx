@@ -14,9 +14,7 @@ const Main = () => {
       <div
         className={styles.heroTealGradient}
         style={{
-          // marginTop: "12vh",
           marginTop: "12dvw",
-          // marginLeft: "29vw",
           marginLeft: "29dvw",
           height: "19vh",
           width: "19vw",
