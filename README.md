@@ -1,9 +1,9 @@
 
 # AI-Models-Website
 
-## 🚀 Live Demo
+## 🚀 Live Demo:
 
-https://demo-website-task.vercel.app/
+https://demo-ai-models-website.vercel.app/
 
 =======
 # 📦 Parallax Scroll Demo – Next.js + Vanilla CSS
